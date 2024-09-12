@@ -39,3 +39,4 @@ export const options = {
   }
 };
 
+export const VideoDetails = 2

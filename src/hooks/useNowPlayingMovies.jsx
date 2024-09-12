@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {addMovie} from "../utils/NowPlayingMoviesSlice"
-import { MOVIE_url, options } from '../utils/constants';
+import { MOVIE_url, options, VideoDetails } from '../utils/constants';
 
 const useNowPlayingMovies = () => {
   const [videoKey, setVideoKey] = useState("");
@@ -19,7 +19,7 @@ const useNowPlayingMovies = () => {
 
     dispatch(addMovie(json.results));
   }
-  const bannerVideoId = nowPlayingMovies?.[4].id;
+  const bannerVideoId = nowPlayingMovies?.[VideoDetails].id;
   async function videoBanner() {
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/${bannerVideoId}/videos`,

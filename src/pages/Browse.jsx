@@ -4,7 +4,8 @@ import Sidebar from "../components/BrowsePageSideBar/Sidebar";
 import VideoContainer from "../components/VideoContainer/VideoContainer";
 import VideoCardContainer from "../components/VideoCardContainer/VideoCardContainer";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
-import useFetchMovieData from "../hooks/useFetchMovieDatajsx";
+import useFetchMovieData from "../hooks/useFetchMovieDetails";
+import { VideoDetails } from "../utils/constants";
 
 const Browse = () => {
   const { nowPlayingMovies, videoKey } = useNowPlayingMovies();
@@ -17,11 +18,11 @@ const Browse = () => {
   const upComingMovies = useFetchMovieData("https://api.themoviedb.org/3/movie/upcoming")
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <BrowseHeader />
       <Sidebar
-        title={nowPlayingMovies?.[4].original_title}
-        desc={nowPlayingMovies?.[4].overview}
+        title={nowPlayingMovies?.[VideoDetails].original_title}
+        desc={nowPlayingMovies?.[VideoDetails].overview}
       />
       {videoKey&&<VideoContainer videoId={videoKey} />}
       <section className="bg-black">

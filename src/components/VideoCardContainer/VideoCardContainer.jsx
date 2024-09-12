@@ -4,7 +4,7 @@ const VideoCardContainer = ({ Movies ,title }) => {
   if(!Movies) return //  early return
   return (
     <div className="relative z-10 p-4 ">
-      <div className="mt-[-100px] mb-[110px]">
+      <div className="xl:mt-[-100px] md:mt-[-15%] mt-[-20%]  mb-[17%] xl:mb-[110px]">
         <h1 className="text-white text-2xl  mb-3 font-extrabold">
           {title}
         </h1>
