@@ -29,13 +29,13 @@ export const MOVIE_url = `https://api.themoviedb.org/3/movie/now_playing?page=1`
 
 
 
-
+const Authorization =import.meta.env.VITE_AUTHORIZATION;
 
 export const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: `Bearer ${process.env.REACT_APP_AUTHORIZATION}`
+    Authorization: `Bearer ${Authorization}`
   }
 };
 
