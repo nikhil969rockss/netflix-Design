@@ -1,13 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOffSharp } from "react-icons/io5";
 import useSignUp from "../hooks/useSignUp";
 import Header from "../components/Body/Header";
+import { FaGoogle } from "react-icons/fa";
+import { getAuth ,signInWithPopup ,GoogleAuthProvider } from "firebase/auth";
 
-const Button = ({ children, className = "" }) => {
+
+const Button = ({ children, className = "" ,type="",onClick }) => {
   return (
     <button
+      onClick={onClick}
+      type={type}
       className={`${className} w-full my-4 h-12 rounded-lg transition-all duration-300 select-none`}
     >
       {children}
@@ -21,6 +26,9 @@ const SignIn = () => {
   const [error, setError] = useState("");
   const [visible, setVisible] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate()
+  const auth = getAuth()
+  const provider = new GoogleAuthProvider()
 
   const { createUser } = useSignUp(
     email,
@@ -40,7 +48,18 @@ const SignIn = () => {
     );
     setVisible(true)
   }
+function signInWithGoogle(){
+  signInWithPopup(auth, provider)
+ .then((result) => {
+  navigate("/browse")
+ })
+ .catch((error) => {
+    setError(error.message)
+    navigate("/Signup")
+  });
+  
 
+}
   return (
     <div>
       <Header/>
@@ -111,6 +130,10 @@ const SignIn = () => {
         <Button className="bg-[hsl(357,92%,46%)] hover:bg-[hsl(357,92%,40%)] active:bg-[hsl(357,92%,38%)] text-lg">
           {" "}
           Sign Up
+        </Button>
+        <Button className="bg-[hsl(218,89%,62%)] hover:bg-[hsl(218,89%,52%)] active:bg-[hsl(218,89%,42%)] flex justify-center items-center gap-3 text-lg" type="button" onClick={signInWithGoogle}  >
+          {" "}
+          Sign up with Google <FaGoogle />
         </Button>
 
         <p className="mt-3">

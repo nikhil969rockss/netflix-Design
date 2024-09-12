@@ -62,7 +62,7 @@ const BrowseHeader = () => {
           />
         )}
         <NavbarItems isOpen={isOpen} />
-        {/* <button className="text-white" onClick={signOutButton}>signout</button> */}
+         <button className="text-white px-2 py-1 bg-red-500 hover:bg-red-600 active:scale-95 rounded-md hidden xl:block md:block" onClick={signOutButton}>sign-out</button> 
       </div>
     </div>
   );
