@@ -4,8 +4,8 @@ import { IoMdInformationCircleOutline } from "react-icons/io";
 
 const Sidebar = ({ title, desc }) => {
   return (
-    <div className="transition-bg hover:scale-105 hover:pl-24 duration-700 hover:bg-gradient-to-r from-black  text-white p-4 mt-[-100px] pt-[100px] relative w-screen min-h-[100vh] pl-10 ">
-      <div className="mt-[10%]">
+    <div className="transition-bg hover:scale-105 hover:pl-24 duration-700 hover:bg-gradient-to-r from-black  text-white p-4  mt-[-70px] relative w-screen min-h-[100vh] pl-10 ">
+      <div className="mt-[15%]">
         <h2 className="text-7xl font-[900] mb-3 ">{title}</h2>
         <p className=" mt-6 mb-3 w-[35%]">{desc}</p>
        <div className="flex transition-all">

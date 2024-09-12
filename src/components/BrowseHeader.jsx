@@ -20,7 +20,7 @@ const BrowseHeader = () => {
       .catch((err) => console.log(err.message));
   }
   return (
-    <div className="h-16 bg-black flex items-center gap-7 justify-between relative z-[1]">
+    <div className="h-16 bg-gradient-to-b from-black  flex items-center gap-7 justify-between relative z-[1]">
       <div className="h-full pl-4 flex gap-4 items-center">
         <img className="h-full" src={NETFLIX_LOGO} alt="Netflix Logo" />
         <menu className="flex gap-5">
