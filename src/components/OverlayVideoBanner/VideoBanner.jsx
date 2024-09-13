@@ -12,25 +12,7 @@ const VideoBanner = ({ isOpen }) => {
 
   if (!movieData) return null;
 
-//   {
-//     "adult": false,
-//     "backdrop_path": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
-//     "genre_ids": [
-//         18,
-//         80
-//     ],
-//     "id": 240,
-//     "original_language": "en",
-//     "original_title": "The Godfather Part II",
-//     "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
-//     "popularity": 83.874,
-//     "poster_path": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
-//     "release_date": "1974-12-20",
-//     "title": "The Godfather Part II",
-//     "video": false,
-//     "vote_average": 8.575,
-//     "vote_count": 12262
-// }
+
 
   const { key } = movieData;
  
