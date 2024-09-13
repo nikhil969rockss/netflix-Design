@@ -22,7 +22,11 @@ const useSignUp = (email, password, setError, setPasswordDetails) => {
         })
         .catch((err) => {
            setError(err.message.split("/")[1].slice(0, -2));
-           navigate("/SignIn")
+           if(err.code === 400){
+            setError(err.message)
+            navigate("/")
+           }
+           
         });
 
       setError("");

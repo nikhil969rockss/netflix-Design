@@ -18,6 +18,8 @@ const useSignIn = (email, password, setError) => {
         console.log(err.message.split("/")[1]?.slice(0, -2));
         setError(err.message.split("/")[1]?.slice(0, -2));
        
+       
+       
       });
   }
   return { handleSignIn };
