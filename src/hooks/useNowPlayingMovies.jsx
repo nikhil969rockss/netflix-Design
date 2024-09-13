@@ -8,12 +8,14 @@ const useNowPlayingMovies = () => {
   const dispatch = useDispatch();
   const nowPlayingMovies = useSelector((store) => store.nowPlayingMovie);
   useEffect(() => {
+  
     getMoviesData();
 
     videoBanner()
   }, [videoKey]);
 
   async function getMoviesData() {
+    if(nowPlayingMovies) return null
     const response = await fetch(MOVIE_url, options);
     const json = await response.json();
 
@@ -21,6 +23,7 @@ const useNowPlayingMovies = () => {
   }
   const bannerVideoId = nowPlayingMovies?.[VideoDetails].id;
   async function videoBanner() {
+   
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/${bannerVideoId}/videos`,
       options
