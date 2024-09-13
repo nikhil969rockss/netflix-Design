@@ -7,7 +7,7 @@ const VideoBanner = ({ isOpen }) => {
   const dispatch = useDispatch();
   const movieData = useSelector((store) => store.movieBanner.movieData);
   const movieDetails = useSelector(store=> store.movieBanner.movieDetailsData )
-  console.log(movieDetails);
+
  
 
   if (!movieData) return null;
@@ -33,7 +33,7 @@ const VideoBanner = ({ isOpen }) => {
           {isOpen && (
             <div className="w-full mt-5  overflow-hidden  text-white flex flex-col items-center justify-center ">
               <iframe
-                className=" md:aspect-video md:w-[90%]  mr-3 md:mr-0 "
+                className=" md:aspect-video md:w-[80%]  mr-3 md:mr-0 "
                 src={`https://www.youtube.com/embed/${key}?playlist=${key}&loop=1&controls=0&autoplay=1`}
                 title="YouTube video player"
                 

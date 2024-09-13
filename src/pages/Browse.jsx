@@ -30,7 +30,7 @@ const Browse = () => {
   );
 
   function handleMovieCardClick(id,movieData) {
-    console.log(id);
+  
 
     fetch(`https://api.themoviedb.org/3/movie/${id}/videos`, options)
       .then((response) => response.json())
