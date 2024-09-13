@@ -1,6 +1,6 @@
 import React from "react";
 
-const VideoCardContainer = ({ Movies ,title }) => {
+const VideoCardContainer = ({ Movies ,title ,onclick }) => {
   if(!Movies) return //  early return
   return (
     <div className="relative z-10 p-4 ">
@@ -15,6 +15,7 @@ const VideoCardContainer = ({ Movies ,title }) => {
                 className="h-48 aspect-auto cursor-pointer hover:scale-110 transition-all duration-500"
                 src={`https://image.tmdb.org/t/p/w780${movie?.poster_path}`}
                 alt=""
+                onClick={()=>onclick(movie.id, movie)}
               />
             ))}
           </div>
