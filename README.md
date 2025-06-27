@@ -47,7 +47,7 @@ A fully functional **Netflix UI Clone** built with **React**, **Redux Toolkit**,
 
 
 ### 📱 Fully Responsive
-<img width="746" alt="homepage" src="https://github.com/user-attachments/assets/1bf3a568-645c-4b2e-a1e4-d53e0b4f1fad" />
+<img width="375" alt="homepage" src="https://github.com/user-attachments/assets/1bf3a568-645c-4b2e-a1e4-d53e0b4f1fad" />
 
 
 ---
