@@ -6,7 +6,7 @@ A fully functional **Netflix UI Clone** built with **React**, **Redux Toolkit**,
 > **Email**: `test@gmail.com`  
 > **Password**: `Test@123`
 
-![URL]([https://i.imgur.com/7BPtjL0.png](https://netflix-gpt-aa41e.web.app/))
+[Netflix-CLONE_URL](https://netflix-gpt-aa41e.web.app/)
 
 ---
 
