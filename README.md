@@ -6,7 +6,7 @@ A fully functional **Netflix UI Clone** built with **React**, **Redux Toolkit**,
 > **Email**: `test@gmail.com`  
 > **Password**: `Test@123`
 
-![Netflix Clone Banner](https://i.imgur.com/7BPtjL0.png)
+![URL]([https://i.imgur.com/7BPtjL0.png](https://netflix-gpt-aa41e.web.app/))
 
 ---
 
@@ -39,13 +39,16 @@ A fully functional **Netflix UI Clone** built with **React**, **Redux Toolkit**,
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login](https://i.imgur.com/mgKXtTh.png)
+
+<img width="800" alt="loginPage" src="https://github.com/user-attachments/assets/71d27379-2dd9-413e-983b-ec929c35bba5" />
 
 ### 📺 Home Page
-![Home](https://i.imgur.com/hFErZWK.png)
+<img width="800" alt="homepage-desktop" src="https://github.com/user-attachments/assets/254b3baf-71d5-45cf-8614-b3f4d9ab085f" />
+
 
 ### 📱 Fully Responsive
-![Responsive](https://i.imgur.com/SgDhM9Y.png)
+<img width="746" alt="homepage" src="https://github.com/user-attachments/assets/1bf3a568-645c-4b2e-a1e4-d53e0b4f1fad" />
+
 
 ---
 
@@ -59,8 +62,6 @@ cd netflix-clone
 # 2. Install dependencies
 npm install
 
-# 3. Create a Firebase project
-# Add your Firebase config to .env file
 
 # 4. Start the development server
 npm run dev
