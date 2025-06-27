@@ -56,7 +56,7 @@ A fully functional **Netflix UI Clone** built with **React**, **Redux Toolkit**,
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/netflix-clone.git
+git clone git@github.com:nikhil969rockss/netflix-Design.git
 cd netflix-clone
 
 # 2. Install dependencies
@@ -65,6 +65,7 @@ npm install
 
 # 4. Start the development server
 npm run dev
+```
 
 
 
